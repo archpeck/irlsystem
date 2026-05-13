@@ -12,6 +12,12 @@
 <p><b>Role:</b> <span th:text="${user.role}"></span></p>
 
 <p><b>Created:</b> <span th:text="${user.createdAt}"></span></p>
+<form method="get" action="/addMeInfo">
+    <button type="submit">Добавить информацию</button>
+</form>
+<form method="get" action="/createOrder">
+    <button type="submit">Создать заказ</button>
+</form>
 
 </body>
 </html>

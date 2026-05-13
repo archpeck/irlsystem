@@ -10,19 +10,19 @@
 <form th:action="@{/login}" method="post">
 
     <div>
-        <label>Email:</label>
+        <label>Эл. почта:</label>
         <input type="text" name="username" />
     </div>
 
     <div>
-        <label>Password:</label>
+        <label>Пароль:</label>
         <input type="password" name="password" />
     </div>
 
-    <button type="submit">Login</button>
+    <button type="submit">Вход</button>
 </form>
 
-<a th:href="@{/register}">Create account</a>
+<a th:href="@{/register}">Регистрация</a>
 
 </body>
 </html>
