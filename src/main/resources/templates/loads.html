@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Loads</title>
+</head>
+<body>
+
+<h1>Список грузов</h1>
+
+<div th:each="load : ${loads}">
+
+    <p th:text="${load.loadingCity}"></p>
+
+    <p th:text="${load.unloadingCity}"></p>
+
+    <p th:text="${load.cargoType}"></p>
+
+    <p th:text="${load.weight}"></p>
+
+    <p th:text="${load.price}"></p>
+
+    <p th:text="${load.createdAt}"></p>
+
+    <p th:text="${load.user.email}"></p>
+
+    <hr>
+
+</div>
+
+</body>
+</html>

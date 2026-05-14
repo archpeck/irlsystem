@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create Load</title>
+</head>
+<body>
+
+<h1>Создать груз</h1>
+
+<form th:action="@{/create}" method="post" th:object="${load}">
+
+    <input type="text"
+           th:field="*{loadingCity}"
+           placeholder="Город загрузки">
+
+    <br><br>
+
+    <input type="text"
+           th:field="*{unloadingCity}"
+           placeholder="Город выгрузки">
+
+    <br><br>
+
+    <input type="text"
+           th:field="*{cargoType}"
+           placeholder="Тип груза">
+
+    <br><br>
+
+    <input type="number"
+           step="0.01"
+           th:field="*{weight}"
+           placeholder="Вес">
+
+    <br><br>
+
+    <input type="number"
+           step="0.01"
+           th:field="*{price}"
+           placeholder="Цена">
+
+    <br><br>
+
+    <button type="submit">Создать</button>
+
+</form>
+
+</body>
+</html>
